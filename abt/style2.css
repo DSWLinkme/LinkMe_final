@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap');
+
+
+#footer{
+    color: white;
+    text-align: center;
+    padding-bottom: 3%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #footer:hover{
+    color: orange;
+  }

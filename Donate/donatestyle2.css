@@ -1,0 +1,11 @@
+#footer{
+    color: white;
+    text-align: center;
+    padding-bottom: 3%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #footer:hover{
+    color: orange;
+  }

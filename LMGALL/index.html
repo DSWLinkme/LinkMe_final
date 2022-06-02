@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <title>Video Gallery</title>
+</head>
+<body>
+
+    <!-- <div class="content">
+        <h1>Motivational Videos</h1>
+    </div> -->
+
+
+    <div class="container">
+        <div class="videos">
+            <video class="active" src="v2.mp4" type = "audio/ogg"></video>
+            <video src="v1.mp4" type = "audio/ogg"></video>
+            <video src="v3.mp4" type = "audio/ogg"></video>
+            <video src="v4.mp4" type = "audio/ogg"></video>
+            <video src="v5.mp4" type = "audio/ogg"></video>
+        </div>
+        <div class="main-video">
+            <video src="videos/video1.mp4" muted controls autoplay></video>
+        </div>
+    </div>
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('.videos video').click(function(){
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var src = $(this).attr('src');
+                $('.main-video video').attr('src',src);
+            });
+        });
+
+    </script>
+
+</body>
+</html>
